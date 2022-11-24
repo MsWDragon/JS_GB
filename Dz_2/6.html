@@ -26,7 +26,20 @@ console.log(declinationOfNumber(5, "стул", "стула", "стульев"));
   "use strict";
 
   function declinationOfNumber(count, one, two, five) {
+    let lastDigit = count % 10;
+    let lastTwoDigits = count % 100;
 
+    if (lastTwoDigits > 10 && lastTwoDigits < 21) {
+      return five;
+    }
+
+    if (lastDigit === 1) {
+      return one;
+    } else if (lastDigit >= 2 && lastDigit < 5) {
+      return two;
+    } else {
+      return five;
+    }
   }
 
   // Число яблок, можно пробовать поставить свое целое, положительное число.

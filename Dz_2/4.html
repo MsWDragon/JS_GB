@@ -31,7 +31,56 @@
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  /**
+   * Функция складывает значение двух чисел
+   * @param {number} a - первое число
+   * @param {number} b - второе число
+   * @returns {number} результат вычислений
+   **/
+   function sum(a, b) {
+    return Number(a + b);
+  }
+
+  /**
+   * Функция находит разность двух чисел
+   * @param {number} a - первое число
+   * @param {number} b - второе число
+   * @returns {number} результат вычислений
+   **/
+  function diff(a, b) {
+    if (a > b) {
+      return Number(a - b);
+    } else if (b > a) {
+      return Number(b - a);
+    } else {
+      return 0;
+    }
+  }
+
+  /**
+   * Функция умножает два числа
+   * @param {number} a - первое число
+   * @param {number} b - второе число
+   * @returns {number} результат вычислений
+   **/
+  function mult(a, b) {
+    return Number(a * b);
+  }
+
+  /**
+   * Функция делит два числа
+   * @param {number} a - первое число
+   * @param {number} b - второе число
+   * @returns {number} результат вычислений
+   **/
+  function div(a, b) {
+    return Number(a / b);
+  }
+
+  console.log(sum(14, 16));
+  console.log(diff(25, 13));
+  console.log(mult(34, 2));
+  console.log(div(16, 8));
 </script>
 </body>
 </html>
